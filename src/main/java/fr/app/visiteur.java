@@ -12,13 +12,13 @@ public class visiteur {
     private TextField Dateinput;
 
     @FXML
-    private Button Envoyer;
-
-    @FXML
-    private Label KilometrageTotal;
+    private Button EnvoyerFiche;
 
     @FXML
     private TextField Kilometrageinput;
+
+    @FXML
+    private Label KilométrageTotal;
 
     @FXML
     private TextField Libelléinput;
@@ -33,16 +33,16 @@ public class visiteur {
     private TextField Montantinput;
 
     @FXML
+    private Label NuitTotal;
+
+    @FXML
     private TextField Nuitinput;
 
     @FXML
+    private Label RepasTotal;
+
+    @FXML
     private TextField Repasmidiinput;
-
-    @FXML
-    private Label TotalNuit;
-
-    @FXML
-    private Label TotalRepasmidi;
 
     @FXML
     private Button logout;
