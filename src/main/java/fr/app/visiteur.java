@@ -12,9 +12,6 @@ public class visiteur {
     private TextField Dateinput;
 
     @FXML
-    private Button EnvoyerFiche;
-
-    @FXML
     private TextField Kilometrageinput;
 
     @FXML
@@ -52,6 +49,11 @@ public class visiteur {
 
     @FXML
     private TextField user_session;
+
+    @FXML
+    void EnvoyerFiche(ActionEvent event) {
+
+    }
 
     @FXML
     void deconnexion(ActionEvent event) {

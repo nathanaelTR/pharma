@@ -49,7 +49,7 @@
             <Label fx:id="NuitTotal" layoutX="640.0" layoutY="201.0" />
             <Label fx:id="RepasTotal" layoutX="642.0" layoutY="243.0" />
             <Label fx:id="KilométrageTotal" layoutX="642.0" layoutY="281.0" />
-            <Button fx:id="EnvoyerFiche" layoutX="432.0" layoutY="578.0" mnemonicParsing="false" text="Envoyer" />
+            <Button layoutX="432.0" layoutY="578.0" mnemonicParsing="false" onAction="#EnvoyerFiche" text="Envoyer" />
          </children></Pane>
    </children>
 </VBox>
