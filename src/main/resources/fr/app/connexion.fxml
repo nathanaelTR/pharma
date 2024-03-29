@@ -30,7 +30,7 @@
             <Button id="buttonConnexion" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="356.0" mnemonicParsing="false" onAction="#buttonConnexion" styleClass="connexionbtn" stylesheets="@style.css" text="CONNEXION" />
             <ImageView fitHeight="105.0" fitWidth="200.0" layoutX="26.0" layoutY="40.0">
                <image>
-                  <Image url="@../../../../../../../../../Downloads/pharma1.jpg" />
+                  <Image url="@pharma1.jpg" />
                </image>
             </ImageView>
          </children>
