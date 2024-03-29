@@ -1,5 +1,6 @@
 package fr.app;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -141,7 +142,9 @@ public class VisiteurController {
     }
 
     @FXML
-    void deconnexion(ActionEvent event) {
+    void deconnexion(ActionEvent event) throws IOException {
+
+        App.setRoot("connexion");
 
     }
 
