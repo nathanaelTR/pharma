@@ -34,3 +34,12 @@
     -fx-border-color: transparent transparent black transparent;
     -fx-padding: 50px;
 }
+
+.historique {
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-cursor: HAND;
+}

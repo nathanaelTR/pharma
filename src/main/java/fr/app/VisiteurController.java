@@ -149,8 +149,8 @@ public class VisiteurController {
     }
 
     @FXML
-    void Historique() {
-
+    void Historique() throws IOException {
+        App.setRoot("application_visiteur_historique");
     }
 
     @FXML

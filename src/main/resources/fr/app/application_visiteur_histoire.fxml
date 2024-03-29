@@ -15,6 +15,6 @@
          </font>
       </Text>
       <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
-      <Button layoutX="715.0" layoutY="14.0" mnemonicParsing="false" onAction="#Déco" text="Déconnexion" />
+      <Button layoutX="715.0" layoutY="14.0" mnemonicParsing="false" onAction="#deconnexion" text="Déconnexion" />
    </children>
 </AnchorPane>

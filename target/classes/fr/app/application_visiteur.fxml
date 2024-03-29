@@ -15,6 +15,7 @@
             <Button fx:id="logout" layoutX="874.0" layoutY="26.0" mnemonicParsing="false" onAction="#deconnexion" styleClass="deconnexionClass" stylesheets="@style.css" text="Déconnexion" />
             <TextField fx:id="user_session" editable="false" layoutX="32.0" layoutY="26.0" onAction="#initialize" />
             <TextField fx:id="user_poste" editable="false" layoutX="32.0" layoutY="65.0" onAction="#initialize" />
+            <Button layoutX="761.0" layoutY="26.0" mnemonicParsing="false" onAction="#Historique" prefHeight="39.0" prefWidth="102.0" styleClass="historique" stylesheets="@style.css" text="Historique" />
          </children>
       </Pane>
       <Pane prefHeight="699.0" prefWidth="1000.0">
@@ -50,7 +51,6 @@
             <Label fx:id="RepasTotal" layoutX="642.0" layoutY="243.0" />
             <Label fx:id="KilométrageTotal" layoutX="642.0" layoutY="281.0" />
             <Button layoutX="432.0" layoutY="578.0" mnemonicParsing="false" onAction="#EnvoyerFiche" text="Envoyer" />
-            <Button layoutX="806.0" layoutY="35.0" mnemonicParsing="false" onAction="#Historique" text="Historique" />
          </children></Pane>
    </children>
 </VBox>
