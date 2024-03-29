@@ -43,3 +43,12 @@
     -fx-text-fill: white;
     -fx-cursor: HAND;
 }
+
+.retourClasse{
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-color: black;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-cursor : HAND;
+}
