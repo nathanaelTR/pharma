@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -14,5 +15,7 @@
             <Font size="24.0" />
          </font>
       </Text>
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
+      <Button layoutX="715.0" layoutY="14.0" mnemonicParsing="false" onAction="#Déco" text="Déconnexion" />
    </children>
 </AnchorPane>
