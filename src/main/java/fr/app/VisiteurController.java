@@ -1,15 +1,11 @@
 package fr.app;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+
+import java.sql.*;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -36,6 +32,9 @@ public class VisiteurController {
 
     @FXML
     private TextField Matriculeinput;
+
+    @FXML
+    private Button Historique;
 
     @FXML
     private TextField Moisinput;
@@ -145,12 +144,40 @@ public class VisiteurController {
     void deconnexion(ActionEvent event) throws IOException {
 
         App.setRoot("connexion");
+        connexionController.UtilisateurConnecter = 0;
 
     }
 
     @FXML
-    void userSession(ActionEvent event) {
+    void Historique() {
 
+    }
+
+    @FXML
+    public void initialize() throws SQLException {
+        userSession();
+    }
+
+    @FXML
+    public void userSession() throws SQLException {
+
+        String sql = "SELECT u.nom, u.prenom, p.posteName, u.id FROM utilisateur u INNER JOIN poste p ON p.id = u.fk_poste"
+        +" WHERE u.id = '" + connexionController.getUser() + "'";
+        
+
+        Connect connexion = new Connect();
+        Connection con = DriverManager.getConnection(connexion.dbURL, connexion.nomUtilisateur, connexion.mdp);
+
+        Statement sqlRec = con.createStatement();
+        ResultSet sqlreq = sqlRec.executeQuery(sql);
+
+        if(sqlreq.next()) {
+            
+        user_session.setText(sqlreq.getString("nom") + " " + sqlreq.getString("prenom"));
+        user_poste.setText(sqlreq.getString("posteName"));
+        Matriculeinput.setText(sqlreq.getString("id"));
+
+        }
     }
 
 }

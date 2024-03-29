@@ -13,15 +13,15 @@
       <Pane prefHeight="72.0" prefWidth="600.0" styleClass="paneClass" stylesheets="@style.css">
          <children>
             <Button fx:id="logout" layoutX="874.0" layoutY="26.0" mnemonicParsing="false" onAction="#deconnexion" styleClass="deconnexionClass" stylesheets="@style.css" text="Déconnexion" />
-            <TextField fx:id="user_session" editable="false" layoutX="32.0" layoutY="26.0" onAction="#userSession" />
-            <TextField fx:id="user_poste" editable="false" layoutX="32.0" layoutY="65.0" onAction="#userSession" />
+            <TextField fx:id="user_session" editable="false" layoutX="32.0" layoutY="26.0" onAction="#initialize" />
+            <TextField fx:id="user_poste" editable="false" layoutX="32.0" layoutY="65.0" onAction="#initialize" />
          </children>
       </Pane>
       <Pane prefHeight="699.0" prefWidth="1000.0">
          <children>
             <Text layoutX="45.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" />
             <Text layoutX="288.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
-            <TextField fx:id="Matriculeinput" editable="false" layoutX="113.0" layoutY="38.0" onAction="#userSession" prefHeight="26.0" prefWidth="76.0" />
+            <TextField fx:id="Matriculeinput" editable="false" layoutX="113.0" layoutY="38.0" onAction="#initialize" prefHeight="26.0" prefWidth="76.0" />
             <TextField fx:id="Moisinput" layoutX="335.0" layoutY="38.0" prefHeight="26.0" prefWidth="76.0" />
             <Text layoutX="189.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frais forfaitaires" />
             <Text layoutX="350.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité" />

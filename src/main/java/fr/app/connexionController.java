@@ -7,9 +7,9 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.sql.*;
 
-public class connexion {
+public class connexionController {
 
-    private String sqlId;
+    public static int UtilisateurConnecter;
 
     @FXML
     private TextField emailInput;
@@ -39,9 +39,13 @@ public class connexion {
         Statement sqlRec = con.createStatement();
         ResultSet sqlreq = sqlRec.executeQuery(sql);
 
+    
+
         // Je regarde dans un tableau si ce qui sera marqué dans le email et password et
         // bon
         while (sqlreq.next()) {
+
+            UtilisateurConnecter = sqlreq.getInt("id");
 
             if (sqlreq.getInt("id") != 0) {
 
@@ -63,8 +67,6 @@ public class connexion {
                 }
 
             }
-
-            sqlId = sqlreq.getString("id");
         }
         erreurId.setStyle("-fx-text-fill: rgb(168, 26, 26);");
         erreurId.setText("Cette utilisateur n'existe pas ! . Réessayer avec de bon identifiant.");
@@ -76,10 +78,10 @@ public class connexion {
     }
 
     @FXML
-    public String getId() {
-        return sqlId;
+    public static int getUser() {
+        System.out.println(UtilisateurConnecter);
+        return UtilisateurConnecter;
     }
-
 }
 
 // "SELECT email, password, p.posteName, fk_poste FROM utilisateur u INNER JOIN

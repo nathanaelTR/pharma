@@ -5,10 +5,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ListView fx:id="Historique_affichage" layoutX="358.0" layoutY="53.0" prefHeight="526.0" prefWidth="454.0" style="-fx-background-color: grey;" />
+      <ListView fx:id="Historique_affichage" layoutX="386.0" layoutY="53.0" prefHeight="499.0" prefWidth="400.0" style="-fx-background-color: grey;" />
       <Text layoutX="316.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historique">
          <font>
             <Font size="24.0" />
