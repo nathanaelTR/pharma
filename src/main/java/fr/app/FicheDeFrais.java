@@ -87,6 +87,7 @@ public class FicheDeFrais {
         Scanner sc = new Scanner(System.in);
         System.out.println("Voulez-vous modifier les frais ? (Oui/Non) : ");
         String reponse = sc.nextLine();
+        
     }
 
 }
