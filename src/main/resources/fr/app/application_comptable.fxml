@@ -11,14 +11,14 @@
 
 <VBox prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.app.comptable">
    <children>
-      <Pane prefHeight="72.0" prefWidth="600.0" styleClass="paneClass" stylesheets="@style.css">
+      <Pane prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: grey;" styleClass="paneClass" stylesheets="@style.css">
          <children>
             <Button fx:id="logout" layoutX="874.0" layoutY="26.0" mnemonicParsing="false" onAction="#deconnexion" styleClass="deconnexionClass" stylesheets="@style.css" text="Déconnexion" />
             <TextField layoutX="35.0" layoutY="14.0" />
             <TextField layoutX="35.0" layoutY="53.0" />
          </children>
       </Pane>
-      <Pane prefHeight="699.0" prefWidth="1000.0">
+      <Pane prefHeight="699.0" prefWidth="1000.0" style="-fx-background-color: grey;">
          <children>
             <ListView layoutX="605.0" layoutY="58.0" onEditCancel="#validiteFicheDeFrais" onEditCommit="#validiteFicheDeFrais" onEditStart="#validiteFicheDeFrais" prefHeight="270.0" prefWidth="359.0" />
             <Label layoutX="611.0" layoutY="35.0" prefHeight="17.0" prefWidth="249.0" text="Liste des Demandes de Validation" />
