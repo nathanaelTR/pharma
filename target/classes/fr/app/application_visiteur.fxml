@@ -20,9 +20,9 @@
       <Pane prefHeight="699.0" prefWidth="1000.0">
          <children>
             <Text layoutX="45.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" />
-            <Text layoutX="288.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mois" />
+            <Text layoutX="288.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
             <TextField fx:id="Matriculeinput" layoutX="113.0" layoutY="38.0" prefHeight="26.0" prefWidth="76.0" />
-            <TextField fx:id="Moisinput" layoutX="373.0" layoutY="38.0" prefHeight="26.0" prefWidth="76.0" />
+            <TextField fx:id="Moisinput" editable="false" layoutX="335.0" layoutY="38.0" prefHeight="26.0" prefWidth="76.0" />
             <Text layoutX="189.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frais forfaitaires" />
             <Text layoutX="350.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité" />
             <Text layoutX="477.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant unitaire²" />
@@ -43,9 +43,9 @@
             <Text layoutX="217.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
             <Text layoutX="438.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libellé" />
             <Text layoutX="628.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant" />
-            <TextField fx:id="Dateinput" layoutX="185.0" layoutY="467.0" prefHeight="26.0" prefWidth="98.0" />
-            <TextField fx:id="Libelléinput" layoutX="406.0" layoutY="467.0" prefHeight="26.0" prefWidth="102.0" />
-            <TextField fx:id="Montantinput" layoutX="606.0" layoutY="467.0" prefHeight="26.0" prefWidth="89.0" />
+            <TextField fx:id="Dateinput" accessibleRole="DATE_PICKER" layoutX="185.0" layoutY="467.0" prefHeight="26.0" prefWidth="98.0" promptText="Date" />
+            <TextField fx:id="Libelléinput" layoutX="406.0" layoutY="467.0" prefHeight="26.0" prefWidth="102.0" promptText="Context" />
+            <TextField fx:id="Montantinput" layoutX="606.0" layoutY="467.0" prefHeight="26.0" prefWidth="89.0" promptText="Montant" />
             <Label fx:id="NuitTotal" layoutX="640.0" layoutY="201.0" />
             <Label fx:id="RepasTotal" layoutX="642.0" layoutY="243.0" />
             <Label fx:id="KilométrageTotal" layoutX="642.0" layoutY="281.0" />
