@@ -50,6 +50,7 @@
             <Label fx:id="RepasTotal" layoutX="642.0" layoutY="243.0" />
             <Label fx:id="KilométrageTotal" layoutX="642.0" layoutY="281.0" />
             <Button layoutX="432.0" layoutY="578.0" mnemonicParsing="false" onAction="#EnvoyerFiche" text="Envoyer" />
+            <Button layoutX="806.0" layoutY="35.0" mnemonicParsing="false" onAction="#Historique" text="Historique" />
          </children></Pane>
    </children>
 </VBox>
