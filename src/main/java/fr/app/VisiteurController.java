@@ -164,7 +164,6 @@ public class VisiteurController {
         String sql = "SELECT u.nom, u.prenom, p.posteName, u.id FROM utilisateur u INNER JOIN poste p ON p.id = u.fk_poste"
         +" WHERE u.id = '" + connexionController.getUser() + "'";
         
-
         Connect connexion = new Connect();
         Connection con = DriverManager.getConnection(connexion.dbURL, connexion.nomUtilisateur, connexion.mdp);
 
@@ -172,7 +171,7 @@ public class VisiteurController {
         ResultSet sqlreq = sqlRec.executeQuery(sql);
 
         if(sqlreq.next()) {
-            
+
         user_session.setText(sqlreq.getString("nom") + " " + sqlreq.getString("prenom"));
         user_poste.setText(sqlreq.getString("posteName"));
         Matriculeinput.setText(sqlreq.getString("id"));
