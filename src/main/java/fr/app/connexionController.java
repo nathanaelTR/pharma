@@ -39,8 +39,6 @@ public class connexionController {
         Statement sqlRec = con.createStatement();
         ResultSet sqlreq = sqlRec.executeQuery(sql);
 
-    
-
         // Je regarde dans un tableau si ce qui sera marqué dans le email et password et
         // bon
         while (sqlreq.next()) {

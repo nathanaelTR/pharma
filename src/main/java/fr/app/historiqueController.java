@@ -22,5 +22,4 @@ public class historiqueController {
         connexionController.UtilisateurConnecter = 0;
     }
 
-
 }

@@ -56,3 +56,8 @@ CREATE TABLE `utilisateur` (
   KEY `fk_poste_idx` (`fk_poste`),
   CONSTRAINT `fk_poste` FOREIGN KEY (`fk_poste`) REFERENCES `poste` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Identification Utilisateur';
+
+
+-- Création d'un utilisateur avec le mot de passe 
+INSERT INTO utilisateur(email, mdp) 
+	VALUES("nicola@gmail.com", SHA2("2024", 512));

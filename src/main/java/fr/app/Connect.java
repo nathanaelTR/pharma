@@ -18,7 +18,7 @@ try {
   if (conn != null) {
     // On affiche un petit message sur le terminal
     System.out.println("Connexion réussie !");
-  };
+  }
 } catch (SQLException ex) {
   // Code de traitement d'erreur
   ex.printStackTrace();
