@@ -21,7 +21,7 @@ Cette interface graphique permet au comptable ou au visiteur de pouvoir ce conne
 
 -- En cour d'écriture
 
-## Application_visiteur 
+## Application Visiteur 
 
 Cette interface graphique est l'interface utilisateur du visiteur, il a été conçu pour que le visiteur puisse crée une fiche de frais.
 
@@ -39,7 +39,7 @@ Vous retrouveraiez sur cette page plusieur bouton tel que le bouton **Déconnexi
 Cette interface graphique comprendra une liste qui vous montrera toute vos fiche de frais faites et vous donnera la possibilité de les modifiers juste en cliquant sur le bouton 
 **Modifier**. Vous retrouveraiez aussie sur l'interface graphique la possibilité de trier vos Date de Fiche de Frais avec un **Sélecteur de Date**.
 
-## Application_comptable
+## Application comptable
 
 Cette interface graphique est l'interface utilisateur du Comptable, il a été conçu pour que le comptable puisse édit et regarder les fiches de frais des Visiteurs.
 Et qu'il puisse ajouté un différent statut : [-- En cour d'écriture]
