@@ -20,12 +20,12 @@
       </Pane>
       <Pane prefHeight="699.0" prefWidth="1000.0" style="-fx-background-color: grey;">
          <children>
-            <ListView layoutX="605.0" layoutY="58.0" onEditCancel="#validiteFicheDeFrais" onEditCommit="#validiteFicheDeFrais" onEditStart="#validiteFicheDeFrais" prefHeight="270.0" prefWidth="359.0" />
+            <ListView fx:id="list_fiche_de_frais" layoutX="605.0" layoutY="58.0" prefHeight="270.0" prefWidth="359.0" />
             <Label layoutX="611.0" layoutY="35.0" prefHeight="17.0" prefWidth="249.0" text="Liste des Demandes de Validation" />
             <ToolBar layoutX="605.0" layoutY="329.0" prefHeight="40.0" prefWidth="359.0">
                <items>
-                  <TextField fx:id="user_search" onAction="#validiteFicheDeFrais" promptText="Utilisateur" />
-                  <TextField fx:id="month_number_search" onAction="#validiteFicheDeFrais" promptText="Mois">
+                  <TextField fx:id="user_search" promptText="Utilisateur" />
+                  <TextField fx:id="month_number_search" promptText="Mois">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>

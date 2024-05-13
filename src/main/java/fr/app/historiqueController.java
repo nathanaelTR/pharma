@@ -50,9 +50,9 @@ public class historiqueController {
     
     }
 
-    private void getPicker() {
+    // private void getPicker() {
         
-    }
+    // }
 
     @FXML
     void deconnexion(ActionEvent event) throws IOException {
