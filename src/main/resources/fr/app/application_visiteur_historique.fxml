@@ -20,5 +20,6 @@
       <Button layoutX="869.0" layoutY="16.0" mnemonicParsing="false" onAction="#deconnexion" prefHeight="46.0" prefWidth="100.0" styleClass="deconnexionClass" stylesheets="@style.css" text="Déconnexion" />
       <Line endX="899.0" endY="8.0" layoutX="101.0" layoutY="69.0" startX="-101.0" startY="8.0" />
       <DatePicker fx:id="DateGet" layoutX="97.0" layoutY="641.0" promptText="Mois" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="729.0" AnchorPane.topAnchor="641.0" />
+      <Button layoutX="283.0" layoutY="641.0" mnemonicParsing="false" text="Modifier" />
    </children>
 </AnchorPane>
