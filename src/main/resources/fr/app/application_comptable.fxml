@@ -14,22 +14,23 @@
       <Pane prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: grey;" styleClass="paneClass" stylesheets="@style.css">
          <children>
             <Button fx:id="logout" layoutX="874.0" layoutY="26.0" mnemonicParsing="false" onAction="#deconnexion" styleClass="deconnexionClass" stylesheets="@style.css" text="Déconnexion" />
-            <TextField layoutX="35.0" layoutY="14.0" />
-            <TextField layoutX="35.0" layoutY="53.0" />
+            <TextField fx:id="user_session" layoutX="35.0" layoutY="14.0" />
+            <TextField fx:id="user_poste" layoutX="35.0" layoutY="53.0" />
          </children>
       </Pane>
       <Pane prefHeight="699.0" prefWidth="1000.0" style="-fx-background-color: grey;">
          <children>
-            <ListView fx:id="list_fiche_de_frais" layoutX="605.0" layoutY="58.0" prefHeight="270.0" prefWidth="359.0" />
-            <Label layoutX="611.0" layoutY="35.0" prefHeight="17.0" prefWidth="249.0" text="Liste des Demandes de Validation" />
-            <ToolBar layoutX="605.0" layoutY="329.0" prefHeight="40.0" prefWidth="359.0">
+            <ListView fx:id="list_fiche_de_frais" layoutX="321.0" layoutY="59.0" prefHeight="270.0" prefWidth="359.0" scaleX="1.4" />
+            <Label layoutX="397.0" layoutY="31.0" prefHeight="17.0" prefWidth="249.0" text="Liste des Demandes de Validation" />
+            <ToolBar layoutX="249.0" layoutY="329.0" prefHeight="40.0" prefWidth="502.0">
                <items>
-                  <TextField fx:id="user_search" promptText="Utilisateur" />
+                  <TextField fx:id="user_search" promptText="Visiteur" />
                   <TextField fx:id="month_number_search" promptText="Mois">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </TextField>
+                  <Button mnemonicParsing="false" onAction="#openFiche" prefHeight="25.0" prefWidth="76.0" text="OUVRIR" />
                </items>
             </ToolBar>
          </children>

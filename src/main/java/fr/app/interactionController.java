@@ -1,7 +1,6 @@
 package fr.app;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -22,8 +21,8 @@ public class interactionController {
 
     }
 
-    @FXML
-    private void userSession() throws SQLException, IOException {}
+    // @FXML
+    // private void userSession() throws SQLException, IOException {}
 
 }
 

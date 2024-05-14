@@ -27,7 +27,7 @@ public class comptable {
     }
 
     @FXML
-    void validiteFicheDeFrais() throws SQLException {
+    public void validiteFicheDeFrais() throws SQLException {
 
         // je récupére le nom, le prenom, lemail, le fk_poste, le postename puis je mais une conditions pour dire que je veux 
         // récupérer seulement 

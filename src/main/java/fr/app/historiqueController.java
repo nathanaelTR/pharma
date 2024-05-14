@@ -28,30 +28,30 @@ public class historiqueController {
     @FXML
     void initialize() throws SQLException {
 
-        String sql = "SELECT f.id, f.id_visiteur ,f.date_DeCreation FROM fiche_de_frais f INNER JOIN utilisateur u ON u.id = f.id_visiteur INNER JOIN etat e ON e.id = f.fk_etat" +
+        String sql = "SELECT f.id, f.id_visiteur, f.date_DeCreation FROM fiche_de_frais f INNER JOIN utilisateur u ON u.id = f.id_visiteur INNER JOIN etat e ON e.id = f.fk_etat"
+                +
                 " WHERE u.id = '" + connexionController.getUser() + "';";
 
-        
         Connect connect = new Connect();
         Connection conn = DriverManager.getConnection(connect.dbURL, connect.nomUtilisateur, connect.mdp);
 
-        Statement requete = conn.createStatement();
-        ResultSet res = requete.executeQuery(sql);
-    
+        Statement statementSql = conn.createStatement();
+        ResultSet req = statementSql.executeQuery(sql);
 
-        while (res.next()) {
-            int IdFiche = res.getInt("id");
-            String dateCreation = res.getString("date_DeCreation");
-            
+        while (req.next()) {
+            int IdFiche = req.getInt("id");
+            String dateCreation = req.getString("date_DeCreation");
+
             String sortie = "Fiche ID: " + IdFiche + " Date : " + dateCreation;
             visiteurFicheDeFrais.add(sortie);
-        };
+        }
+
         Historique_affichage.setItems(visiteurFicheDeFrais);
-    
+
     }
 
     // private void getPicker() {
-        
+
     // }
 
     @FXML
@@ -62,6 +62,8 @@ public class historiqueController {
 
 }
 
-
-     //   sql = "SELECT f.id, f.id_visiteur ,f.date_DeCreation FROM fiche_de_frais f INNER JOIN utilisateur u ON u.id = f.id_visiteur INNER JOIN etat e ON e.id = f.fk_etat" +
-        // " WHERE u.id = '" + connexionController.getUser() + "' AND MONTH(f.date_DeCreation) = '" + DateGet.getValue().getMonthValue() + "';";
+// sql = "SELECT f.id, f.id_visiteur ,f.date_DeCreation FROM fiche_de_frais f
+// INNER JOIN utilisateur u ON u.id = f.id_visiteur INNER JOIN etat e ON e.id =
+// f.fk_etat" +
+// " WHERE u.id = '" + connexionController.getUser() + "' AND
+// MONTH(f.date_DeCreation) = '" + DateGet.getValue().getMonthValue() + "';";
